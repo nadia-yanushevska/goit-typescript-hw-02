@@ -4,7 +4,7 @@
 */
 
 function getPromise(): Promise<(string | number)[]> {
-    return new Promise((resolve) => {
+    return new Promise<(string | number)[]>((resolve) => {
         resolve(["Text", 50]);
     });
 }
