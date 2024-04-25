@@ -7,7 +7,7 @@ interface componentObj {
     [prop: string]: string | number | boolean;
 }
 
-class Component<T extends object> {
+class Component<T> {
     constructor(public props: T) {}
 }
 
